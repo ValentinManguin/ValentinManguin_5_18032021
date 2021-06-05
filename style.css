@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3e9f1;
+    border-radius: 0.5rem;
+    border: solid #f3e9f1;
+}
+
+
+
+.logo {
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav, i {
+    color: #0089ff;
+    font-size: larger;
+    text-decoration: none;
+    margin-right: 20px
+  ;
+
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: #f3e9f1;
+    border-radius: 0.5rem;
+    border: solid #f3e9f1;
+    
+}
+
+img {
+    height: 200px;
+
+}
+
+.productPage img {
+    display: block;
+    margin: auto;
+}
+
+
+.produit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+p {
+    font-size: larger;
+}
+
+button {
+    background-color: #0089ff;
+    border-color: #0089ff;
+    color: white;
+    padding: 8px;
+    width: 200px;
+    border-radius: inherit;
+    font-size: inherit;
+    display: block;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+form {
+display: grid;
+margin: 50px;
+border-radius: inherit;
+background-color: #f3e9f1;
+}
+
+input {
+margin: 10px;
+}
+
+textarea {
+    
+    height: 23px;
+    margin-left: 10px;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #f3e9f1;
+    border-radius: 0.5rem;
+    border: solid #f3e9f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+

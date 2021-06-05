@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11a26621b3.js" crossorigin="anonymous"></script>
+
+    <title>Panier - Orinoco</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="panier.html">
+                Panier <i class="fas fa-shopping-cart"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main id="main">
+
+
+        <ul class="basket" id="basket">
+            <div><button id="videPanier">Vider le panier</button></div>
+        </ul>
+        
+        
+
+
+        <form id="infoClient" class="form_input">
+            <p>Merci de remplir le formulaire afin de valider votre commande</p>
+            <label for="firstname"></label>
+            <input type="text" name="firstname" id="firstname" required="required" placeholder="Prénom*">
+            <label for="Lastname"></label>
+            <input type="text" name="Lastname" id="lastname" required="required" placeholder="Nom*">
+            <label for="address"></label>
+            <textarea name="address" id="address" cols="25" rows="5" required="required"
+                placeholder="Adresse*"></textarea>
+            <label for="city"></label>
+            <input type="text" name="city" id="city" required="required" placeholder="Ville">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required="required" placeholder="Email">
+            <button onclick="setData()">VALIDER MA COMMANDE</button>
+            
+
+        </form>
+        
+
+    </main>
+
+    <script src="helper.js"></script>
+    <script src="panier.js"></script>
+
+
+
+</body>
+
+
+
+</html>
