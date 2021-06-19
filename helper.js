@@ -38,5 +38,3 @@ alert("Votre panier est mainteneant vide");
 
 
 
-
-

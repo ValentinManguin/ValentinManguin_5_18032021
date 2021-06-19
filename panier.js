@@ -15,10 +15,14 @@ const getInfoClient = () => {
         document.getElementById('city').value = infoClient.ville;
         document.getElementById('email').value = infoClient.email;
 
-
     }
+
+    
+    
 };
 getInfoClient();
+
+
 
 //faire la fonction qui récuper le panier et qui génrer du html pour chaque élément du panier 
 
@@ -36,6 +40,8 @@ function displayBasket() {
 }
 displayBasket();
 
+
+
 // Vider le panier
 
 document.getElementById('videPanier').addEventListener('click', emptyBasket);
@@ -43,19 +49,24 @@ document.getElementById('videPanier').addEventListener('click', emptyBasket);
 async function setData() {
 
     //let infoClientNom = document.getElementById('Lastname').value;
+   
     let infoClient = {
         nom: document.getElementById('lastname').value,
         prenom: document.getElementById('firstname').value,
         adresse: document.getElementById('address').value,
         ville: document.getElementById('city').value,
-        email: document.getElementById('email').value
+        email: document.getElementById('email').value        
 
     };
+
+ 
 
     let infoClientStr = JSON.stringify(infoClient);
     localStorage.setItem('infoClient', infoClientStr);
 
 
+
+    
     // envoyer au serveur
 
 
@@ -104,8 +115,15 @@ let mainElt = document.getElementById('main');
 
 };
 
+ // localStorage.clear();
 
 
-// JSON.stringify =  transforme  l'objet transmis en paramètre en chaîne de caractères JSON
+
+
+
+
+
+
+ // JSON.stringify =  transforme  l'objet transmis en paramètre en chaîne de caractères JSON
 
 // JSON.Parse() = transforme la chaîne de caractères JSON en objet
