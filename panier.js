@@ -112,10 +112,10 @@ console.log(productsOrder);
 let mainElt = document.getElementById('main');
   mainElt.innerHTML = ` <h2>Merci pour votre commande !</h2> <h2>Votre numéro de commande est : ${order.orderId}</h2>`;
 
-
+  localStorage.clear();
 };
 
- // localStorage.clear();
+ 
 
 
 
